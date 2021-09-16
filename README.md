@@ -3,8 +3,9 @@
 # Description
 Create an nginx on ubuntu image to deploy static pages.
 The image is build on AWS by default in "eu-central-1" region.
+This image contains a default instalation of nginx. If you need to change the nginx confiration please refer to [nginx docs](http://nginx.org/en/docs/)
 
-# how to use
+# How to use
 Clone the repository on your computer
 ```bash
 git clone git@github.com:ionhashicorp/nginx-on-ubuntu-aws-image.git
