@@ -1,7 +1,7 @@
 # AWS AMI: nginx on ubuntu using packer
 
 # Description
-Create an nginx on ubuntu image to deploy static pages.
+Create an nginx web server on ubuntu image to deploy static pages.\
 The image is build on AWS by default in "eu-central-1" region.
 This image contains a default instalation of nginx. If you need to change the nginx confiration please refer to [nginx docs](http://nginx.org/en/docs/)
 
