@@ -7,6 +7,12 @@ packer {
   }
 }
 
+# Default region is "eu-central-1", however you can modify the region by using --var flag on the CLI while building the image.
+variable "region" {
+    type = string
+    default = "eu-central-1"
+}
+
 variable "ami_prefix" {
     type = string
     default = "nginx-on-ubuntu-aws"
@@ -19,7 +25,7 @@ locals {
 source "amazon-ebs" "ubuntu" {
   ami_name      = "${var.ami_prefix}-${local.timestamp}"
   instance_type = "t2.micro"
-  region        = "eu-central-1"
+  region        = "${var.region}"
   source_ami_filter {
     filters = {
       name                = "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*"
