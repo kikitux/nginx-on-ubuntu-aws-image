@@ -46,8 +46,9 @@ build {
 
   provisioner "shell" {
     inline = [
-      "sudo apt update",
-      "sudo apt install -y nginx",
+      "export DEBIAN_FRONTEND=noninteractive"
+      "sudo apt-get update",
+      "sudo apt-get install -y nginx",
     ]
   }
 
