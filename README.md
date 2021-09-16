@@ -34,5 +34,5 @@ packer build nginx-on-ubuntu.pkr.hcl
 You can specify a different region where you want to deploy the image by specifying the [region](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) code:
 
 ```
-packer build --var region=<REGION_CODE> nginx-on-ubuntu.pkr.hc
+packer build --var region=<REGION_CODE> nginx-on-ubuntu.pkr.hcl
 ```
