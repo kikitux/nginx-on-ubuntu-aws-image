@@ -67,7 +67,6 @@ nginx-on-ubuntu.amazon-ebs.ubuntu: output will be in this color.
 
            <<< output omitted for brevity >>> 
            
-           
 ==> nginx-on-ubuntu.amazon-ebs.ubuntu: Stopping the source instance...
     nginx-on-ubuntu.amazon-ebs.ubuntu: Stopping instance
 ==> nginx-on-ubuntu.amazon-ebs.ubuntu: Waiting for the instance to stop...
